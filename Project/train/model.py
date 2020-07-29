@@ -22,7 +22,6 @@ class LSTMClassifier(nn.Module):
         """
         Perform a forward pass of our model on some input.
         """
-        print(x.shape)
         x = x.t()
         lengths = x[0,:]
         reviews = x[1:,:]
